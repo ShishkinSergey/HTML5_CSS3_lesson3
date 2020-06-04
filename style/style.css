@@ -1,7 +1,15 @@
+
+@font-face {
+
+  font-family: OpenSans; /* Имя шрифта */
+  
+  src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
 .container {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: openSans-regular, sans-serif;
   width: 1280px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -127,10 +135,11 @@ h2 {
 
 .screenshots-wrapper {
   margin-top: 25px;
+  
 }
 
 .screenshots-wrapper figure {
-  width: 45%;
+  width: 50%;
 }
 
 .figure-img {
@@ -207,6 +216,11 @@ h2 {
   align-items: center;
   width: 300px;
   height: 306px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
   border-radius: 3%;
 }
 
@@ -225,6 +239,7 @@ h2 {
 
 .standart h2 {
   color: #FFFFFF;
+  margin: 16px auto;
   font-family: ArialMT, MyriadPro-Regular, AdobeInvisFont;
   font-size: 24px;
   box-align: left;
@@ -235,7 +250,7 @@ h2 {
 
 .standart li {
   color: #FFFFFF;
-  font-family: ArialMT, Arial-ItalicMT, MyriadPro-Regular, AdobeInvisFont;
+  font-family: OpenSans-Regular;
   font-size: 14px;
   text-align: left;
 }
@@ -254,11 +269,17 @@ h2 {
   align-items: center;
   width: 300px;
   height: 404px;
+  font-family: ArialMT;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
   border-radius: 3%;
 }
 
 .premium h2 {
   color: #FFFFFF;
+  margin: 16px auto;
   font-family: ArialMT, MyriadPro-Regular, AdobeInvisFont;
   font-size: 24px;
   box-align: left;
@@ -280,10 +301,16 @@ h2 {
   width: 300px;
   height: 499px;
   border-radius: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .lux h2 {
   color: #FFFFFF;
+  margin: 16px auto;
   font-family: ArialMT, MyriadPro-Regular, AdobeInvisFont;
   font-size: 24px;
   box-align: left;
@@ -316,12 +343,14 @@ h2 {
 }
 
 .review-item-photo {
-  width: 120px;
-  height: 120px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   position: relative;
   top: 8px;
+  left: -18px;
 }
+
 
 .review-item-text {
   width: 90%;
@@ -374,14 +403,15 @@ h2 {
   margin: 20px;
 }
 
-form input, textarea 
-{
+form input,
+textarea {
   width: 249px;
 }
-.input {
+
+.social {
+  margin-left: 100px;
   width: 500px;
   height: 360px;
-  padding-left: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -406,22 +436,23 @@ form input, textarea
 }
 
 .input-text {
+  width: 100%;
   height: 41px;
 }
 
 
 .input-text:focus {
   background-color: rgba(255, 255, 255, 0.767);
-  outline:none;
+  outline: none;
 }
 
 .input-message {
   height: 171px;
 }
 
-.input-message:focus{
+.input-message:focus {
   background-color: rgba(255, 255, 255, 0.767);
-  outline:none;
+  outline: none;
 }
 
 .radius {
@@ -440,7 +471,7 @@ form input, textarea
 .cocial ul li {
   list-style-type: none;
   padding: 0;
-  margin-top: 18px;
+  margin-top: 5px;
 }
 
 .cocial ul li a {
@@ -466,6 +497,7 @@ form input, textarea
   align-items: baseline;
   right: 50px;
 }
+
 .icon:hover {
   width: 42px;
   height: 42px;
@@ -477,8 +509,6 @@ form input, textarea
   right: 50px;
 }
 
-.form-control{
+.form-control {
   resize: none;
-  width: 100%;
-  height: 171px;
 }
